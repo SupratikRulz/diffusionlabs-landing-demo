@@ -65,17 +65,10 @@ const people = [
   },
   {
     id: 5,
-    name: "Him",
-    designation: "His title",
+    name: "Supratik Basu",
+    designation: "Future Engineer 🤞",
     image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
-  },
-  {
-    id: 6,
-    name: "Her",
-    designation: "Some title",
-    image:
-      "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3534&q=80",
+      "https://media.licdn.com/dms/image/C4D03AQEF74zw0xCG-A/profile-displayphoto-shrink_400_400/0/1653652745924?e=1713398400&v=beta&t=5oZag_e0EWHMelkOpUWk6WVRMQhXB181UvAqB1OSYSY",
   },
 ];
 
@@ -168,58 +161,58 @@ export default function Home() {
         </h2>
 
         <div className="w-full flex flex-row items-center justify-center gap-10 flex-wrap mb-20">
-          <CardContainer className="inter-var max-w-sm rounded-2xl hover:shadow-[0_8px_16px_rgb(255_101_0/0.4)] bg-[#ff7b0000] border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 cursor-pointer">
-            <CardBody className="relative group/card  hover:shadow-sm hover:shadow-emerald-500/[0.1] bg-[linear-gradient(180deg,#0d0a01,#0e0602,#0b0404,#050304,#010101)] border-white/[0.1]  w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+          <CardContainer className="inter-var max-w-sm w-full rounded-2xl hover:shadow-[0_8px_16px_rgb(255_101_0/0.4)] bg-[#ff7b0000] border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 cursor-pointer">
+            <CardBody className="relative group/card  hover:shadow-sm hover:shadow-emerald-500/[0.1] bg-[linear-gradient(180deg,#0d0a01,#0e0602,#0b0404,#050304,#010101)] border-white/[0.1]  w-full sm:w-[30rem] h-auto rounded-xl p-6 border">
               <CardItem
                 translateZ="50"
                 className="text-xl font-bold text-white"
               >
-                X (Formerly Twitter)
+                X (Twitter)
               </CardItem>
-              <CardItem translateZ="100" className="w-full mt-4">
+              <CardItem translateZ="100" className="w-full mt-4 flex flex-row justify-center">
                 <Image
                   src="https://www.mantle.xyz/twitter-logo.svg"
                   height="1000"
                   width="1000"
-                  className="w-full h-40 object-contain rounded-xl group-hover/card:shadow-xl"
+                  className="w-40 h-40 object-contain rounded-xl group-hover/card:shadow-xl"
                   alt="thumbnail"
                 />
               </CardItem>
             </CardBody>
           </CardContainer>
-          <CardContainer className="inter-var max-w-sm rounded-2xl hover:shadow-[0_8px_16px_rgb(255_101_0/0.4)] bg-[#ff7b0000] border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 cursor-pointer">
-            <CardBody className="relative group/card  hover:shadow-sm hover:shadow-emerald-500/[0.1] bg-[linear-gradient(180deg,#0d0a01,#0e0602,#0b0404,#050304,#010101)] border-white/[0.1]  w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+          <CardContainer className="inter-var max-w-sm w-full rounded-2xl hover:shadow-[0_8px_16px_rgb(255_101_0/0.4)] bg-[#ff7b0000] border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 cursor-pointer">
+            <CardBody className="relative group/card  hover:shadow-sm hover:shadow-emerald-500/[0.1] bg-[linear-gradient(180deg,#0d0a01,#0e0602,#0b0404,#050304,#010101)] border-white/[0.1]  w-full sm:w-[30rem] h-auto rounded-xl p-6 border  ">
               <CardItem
                 translateZ="50"
                 className="text-xl font-bold text-neutral-600 dark:text-white"
               >
                 Telegram
               </CardItem>
-              <CardItem translateZ="100" className="w-full mt-4">
+              <CardItem translateZ="100" className="w-full mt-4 flex flex-row justify-center">
                 <Image
                   src="https://www.mantle.xyz/telegram-logo.svg"
                   height="1000"
                   width="1000"
-                  className="w-full h-40 object-contain rounded-xl group-hover/card:shadow-xl"
+                  className="w-40 h-40 object-contain rounded-xl group-hover/card:shadow-xl"
                   alt="thumbnail"
                 />
               </CardItem>
             </CardBody>
           </CardContainer>
-          <CardContainer className="inter-var max-w-sm rounded-2xl hover:shadow-[0_8px_16px_rgb(255_101_0/0.4)] bg-[#ff7b0000] border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 cursor-pointer">
-            <CardBody className="relative group/card  hover:shadow-sm hover:shadow-emerald-500/[0.1] bg-[linear-gradient(180deg,#0d0a01,#0e0602,#0b0404,#050304,#010101)] border-white/[0.1]  w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+          <CardContainer className="inter-var max-w-sm w-full rounded-2xl hover:shadow-[0_8px_16px_rgb(255_101_0/0.4)] bg-[#ff7b0000] border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 cursor-pointer">
+            <CardBody className="relative group/card  hover:shadow-sm hover:shadow-emerald-500/[0.1] bg-[linear-gradient(180deg,#0d0a01,#0e0602,#0b0404,#050304,#010101)] border-white/[0.1]  w-full sm:w-[30rem] h-auto rounded-xl p-6 border  ">
               <CardItem
                 translateZ="50"
                 className="text-xl font-bold text-neutral-600 dark:text-white"
               >
                 Discord
               </CardItem>
-              <CardItem translateZ="100" className="w-full mt-4">
+              <CardItem translateZ="100" className="w-full mt-4 flex flex-row justify-center">
                 <Image
                   src="https://www.mantle.xyz/discord-logo.svg"
                   height="1000"
                   width="1000"
-                  className="w-full h-40 object-contain rounded-xl group-hover/card:shadow-xl"
+                  className="w-40 h-40 object-contain rounded-xl group-hover/card:shadow-xl"
                   alt="thumbnail"
                 />
               </CardItem>

@@ -25,6 +25,23 @@ export const FloatingNav = ({
 
     const [visible, setVisible] = useState(true);
 
+    const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+        // first prevent the default behavior
+        e.preventDefault();
+        // get the href and remove everything before the hash (#)
+        const href = e.currentTarget.href;
+        const targetId = href.replace(/.*\#/, "");
+        if (globalThis.location.pathname.substring(1) == "") {
+            // get the element by id and use scrollIntoView
+            const elem = document.getElementById(targetId);
+            elem?.scrollIntoView({
+                behavior: "smooth",
+            });
+        } else {
+            // globalThis.location.href = 'https://fydaa.com/#pricing'
+        }
+    };
+
     // useMotionValueEvent(scrollYProgress, "change", (current) => {
     //     // Check if current is not undefined and is a number
     //     if (typeof current === "number") {
@@ -71,6 +88,7 @@ export const FloatingNav = ({
                     <Link
                         key={`link=${idx}`}
                         href={navItem.link}
+                        onClick={handleScroll}
                         className={cn(
                             "relative text-neutral-50 items-center flex space-x-1 hover:text-neutral-300"
                         )}
