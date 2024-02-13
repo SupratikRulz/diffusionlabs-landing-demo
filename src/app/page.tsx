@@ -15,17 +15,17 @@ const navItems = [
 
   {
     name: "Work",
-    link: "#work",
+    link: "/#work",
     icon: undefined, //<IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
   },
   {
     name: "Team",
-    link: "#team",
+    link: "/#team",
     icon: undefined,//<IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
   },
   {
     name: "Community",
-    link: "#community",
+    link: "/#community",
     icon: undefined,
     // (
     //   <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
