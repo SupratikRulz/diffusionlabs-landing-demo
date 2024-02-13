@@ -65,7 +65,7 @@ export const FloatingNav = ({
                     "relative text-neutral-50 items-center flex space-x-1 hover:text-neutral-300 mr-8"
                 )}>
                     <Image src={'/logo-short.svg'} alt="Diffusion Labs" width={15} height={15} className="aspect-[29/30] mr-1" />
-                    <Image src={'/logo-full.svg'} alt="Diffusion Labs" width={121} height={20} className="aspect-[163/30]" />
+                    <Image src={'/logo-full.svg'} alt="Diffusion Labs" width={121} height={20} className="aspect-[163/30] hidden md:block" />
                 </Link>
                 {navItems.map((navItem: any, idx: number) => (
                     <Link

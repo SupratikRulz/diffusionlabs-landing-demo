@@ -86,9 +86,9 @@ export default function Home() {
         <FloatingNav navItems={navItems} />
       </BackgroundGradientAnimation>
       <div className="absolute z-50 inset-0 flex flex-col items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl p-4">
-        <div className="relative drop-shadow-2xl bg-gradient-to-b text-white/90">
+        <div className="relative drop-shadow-2xl bg-gradient-to-b text-white/90 pt-16">
           <span>We are a </span><ItalicText>software engineering</ItalicText><br />and <ItalicText>financial risk</ItalicText> research lab.
-          <div className="w-full max-w-screen-lg relative h-[500px]">
+          <div className="w-full max-w-screen-lg relative h-[250px] md:h-[500px]">
             <Spline scene="https://prod.spline.design/kiJ2FfAT6F61aTri/scene.splinecode" />
           </div>
         </div>
@@ -158,7 +158,7 @@ export default function Home() {
       </div>
       <div id="community" className="w-full relative flex flex-col px-4 py-10 items-center justify-center bg-[#010101]">
         <div className="absolute bottom-0 right-0 flex h-8 items-end overflow-hidden">
-          <div className="flex -mb-px h-[2px] w-[300px] lg:w-[1000px] -scale-x-100">
+          <div className="flex -mb-px h-[2px] w-[calc(100vw-128px)]  -scale-x-100">
             <div className="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
             <div className="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
           </div>
@@ -168,11 +168,11 @@ export default function Home() {
         </h2>
 
         <div className="w-full flex flex-row items-center justify-center gap-10 flex-wrap mb-20">
-          <CardContainer className="inter-var max-w-sm rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] bg-[#ff7b0000] border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700">
-            <CardBody className="relative group/card  hover:shadow-sm hover:shadow-emerald-500/[0.1] bg-[linear-gradient(180deg,#0d0a01,#0e0602,#0b0404,#050304,#010101)] border-white/[0.1]  w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+          <CardContainer className="inter-var max-w-sm rounded-2xl hover:shadow-[0_8px_16px_rgb(255_101_0/0.4)] bg-[#ff7b0000] border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 cursor-pointer">
+            <CardBody className="relative group/card  hover:shadow-sm hover:shadow-emerald-500/[0.1] bg-[linear-gradient(180deg,#0d0a01,#0e0602,#0b0404,#050304,#010101)] border-white/[0.1]  w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
               <CardItem
                 translateZ="50"
-                className="text-xl font-bold text-neutral-600 dark:text-white"
+                className="text-xl font-bold text-white"
               >
                 X (Formerly Twitter)
               </CardItem>
@@ -187,7 +187,7 @@ export default function Home() {
               </CardItem>
             </CardBody>
           </CardContainer>
-          <CardContainer className="inter-var max-w-sm rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] bg-[#ff7b0000] border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700">
+          <CardContainer className="inter-var max-w-sm rounded-2xl hover:shadow-[0_8px_16px_rgb(255_101_0/0.4)] bg-[#ff7b0000] border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 cursor-pointer">
             <CardBody className="relative group/card  hover:shadow-sm hover:shadow-emerald-500/[0.1] bg-[linear-gradient(180deg,#0d0a01,#0e0602,#0b0404,#050304,#010101)] border-white/[0.1]  w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
               <CardItem
                 translateZ="50"
@@ -206,7 +206,7 @@ export default function Home() {
               </CardItem>
             </CardBody>
           </CardContainer>
-          <CardContainer className="inter-var max-w-sm rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] bg-[#ff7b0000] border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700">
+          <CardContainer className="inter-var max-w-sm rounded-2xl hover:shadow-[0_8px_16px_rgb(255_101_0/0.4)] bg-[#ff7b0000] border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 cursor-pointer">
             <CardBody className="relative group/card  hover:shadow-sm hover:shadow-emerald-500/[0.1] bg-[linear-gradient(180deg,#0d0a01,#0e0602,#0b0404,#050304,#010101)] border-white/[0.1]  w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
               <CardItem
                 translateZ="50"
